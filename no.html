@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></head>
+    <style type="text/css">
+        h1{
+        font-family: 'Dancing Script', cursive;
+        }
+        button{
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+        }
+     </style>   
+    <title> NOWAY </title>
+
+  </head>
+  <body>
+
+    <div id="countdown-text"><h1>Installing Virus . . .</h1></div>
+
+  <script>
+    
+    const countdownDuration = 5000; 
+
+    const countdownText = document.getElementById('countdown-text');
+
+    
+    setTimeout(() => {
+      
+      countdownText.textContent = 'Installation Complete';
+    }, countdownDuration);
+
+    countdownText.style.fontFamily = 'Dancing Script', 'cursive'
+    countdownText.style.margin = '1%'
+    countdownText.style.fontWeight = 'bold'
+    countdownText.style.color = 'palevioletred'
+  </script>
+
+    <div>
+       <video class="elgato" src="itsok.mp4" width="200px" loop autoplay></video>
+
+    </div>
+
+    <a href="index.html" target="_self">
+    <button id="myButton" style="display: none;">Continue</button>
+    </a>
+  <script>
+    
+    const myButton = document.getElementById('myButton');
+
+    const delayInMilliseconds = 5000; 
+    
+    setTimeout(() => {
+      myButton.style.display = 'block'; 
+    }, delayInMilliseconds);
+
+    myButton.style.textAlign = 'center'
+    myButton.style.marginLeft = '47%'
+  </script>
+
+    
+
+
+  </body>
+
+
+</html>
